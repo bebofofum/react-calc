@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 # A Simple Calculator Project Built with React
 
 
