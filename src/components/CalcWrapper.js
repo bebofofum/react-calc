@@ -3,7 +3,7 @@ import '../styles/CalcWrapper.css'
 
 const CalcWrapper = ({children}) => {
     return (
-        <div className="outer-wrapper">I'll be the wrapper</div>
+        <div className="outer-wrapper">{children}</div>
     )
 }
 
