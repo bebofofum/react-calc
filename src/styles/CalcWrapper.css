@@ -1,4 +1,5 @@
 .outer-wrapper {
+    display:flex;
     width: 900px;
     height: 540px;
     padding: 10px;
