@@ -1,9 +1,14 @@
-import './App.css';
+import React from 'react';
+import CalcWrapper from './components/CalcWrapper';
+import './styles/App.css';
 
 const App = () => {
   return (
     <div className="App">
-		<p>Hello World</p>
+		<div className="container">
+			<CalcWrapper />
+			
+		</div>
 
     </div>
   );

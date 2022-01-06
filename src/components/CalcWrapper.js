@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/CalcWrapper.css'
 
 const CalcWrapper = ({children}) => {
     return (
