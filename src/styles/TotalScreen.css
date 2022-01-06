@@ -6,8 +6,8 @@
     background-color: #1d2e3d2d;
     border-radius: 10px;
     display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-end;
     color: white;
     font-weight: bold;
     box-sizing: border-box;

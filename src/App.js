@@ -1,6 +1,7 @@
 import React from 'react';
 import CalcWrapper from './components/CalcWrapper';
 import TotalScreen from './components/TotalScreen';
+import ButtonWrapper from './components/ButtonWrapper';
 import './styles/App.css';
 
 const App = () => {
@@ -9,6 +10,8 @@ const App = () => {
 		<div className="container">
 			<CalcWrapper>
 				<TotalScreen />	
+				<ButtonWrapper />
+				
 			</CalcWrapper>
 			
 		</div>
