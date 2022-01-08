@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ButtonWrapper.css';
+import '../styles/Button.css';
 
 const ButtonWrapper = ({children}) => {
     return (
@@ -9,7 +10,7 @@ const ButtonWrapper = ({children}) => {
             <button className="" value="0" onClick={() => console.log("clicked!")}>2</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>3</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>4</button>
-            <button className="" value="0" onClick={() => console.log("clicked!")}>&#61;</button>
+            <button className="equals-button" value="0" onClick={() => console.log("clicked!")}>&#61;</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>5</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>6</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>7</button>
@@ -19,7 +20,7 @@ const ButtonWrapper = ({children}) => {
             <button className="" value="0" onClick={() => console.log("clicked!")}>&minus;</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>&times;</button>
             <button className="" value="0" onClick={() => console.log("clicked!")}>&divide;</button>
-
+            <button className="clear-button" value="0" onClick={() => console.log("clicked!")}>C</button>
         </div>
     )
 }

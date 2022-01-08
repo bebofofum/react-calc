@@ -1,8 +1,8 @@
 .button-container {
     width: 100%;
-    height: calc(100% - 110px);
+    height: calc(100% - 135px);
     display: grid;
-    grid-template: repeat(6, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(6, 1fr);
     gap: 10px;
 
 }
