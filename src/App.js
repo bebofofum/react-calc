@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
 		<div className="container">
 			<CalcWrapper>
-				<TotalScreen />	
+				<TotalScreen value="0"/>	
 				<ButtonWrapper />
 				
 			</CalcWrapper>

@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/TotalScreen.css';
 
 
-const TotalScreen = (props) => {
+const TotalScreen = ({ value }) => {
     return(
         <div className="screen-display">
-            I'm the screen
+            {value}
         </div>
     )
 }
