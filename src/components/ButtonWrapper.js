@@ -1,15 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/ButtonWrapper.css';
 import '../styles/Button.css';
 
 // const btnValue = [0, 1, 2, 3, 4, "&#61;", 5, 6, 7, 8, 9, "&#43;", "&minus;", "&times;", "&divide;"]
 
-const addButtonDetail = (e) => {
-    console.log("clicked", e.target.value)
-}
 
 
-const ButtonWrapper = ({children}) => {
+
+const ButtonWrapper = ({ addButtonDetail }) => {
 
     return (
         <div className="button-container">
