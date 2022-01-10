@@ -21,20 +21,38 @@ const App = () => {
 		e.preventDefault();
 		const value = e.target.value;
 
-		if (calcState.num.length < 16) {
-			setCalcState({
-				...calcState,
-				num: 
-					calcState.num === 0 && value === 0 
-					? 0
-					: calcState.num % 1 === 0 
-					? Number(calcState.num + value) 
-					: calcState.num + value,
-				calcSum: !calcState.sign ? 0 : calcState.calcSum
-			})
-		}
+		console.log("this is the value in onNumClick", value)
+		console.log("num length is", calcState.num.length)
+
+		setCalcState({
+			...calcState,
+			num: value
+		})
+
+
+		// if (calcState.num.length < 16) {
+		// 	setCalcState({
+		// 		...calcState,
+		// 		num: 
+		// 			calcState.num === 0 && value === 0 
+		// 			? 0
+		// 			: calcState.num % 1 === 0 
+		// 			? Number(calcState.num + value) 
+		// 			: calcState.num + value,
+		// 		calcSum: !calcState.sign ? 0 : calcState.calcSum
+		// 	})
+		// }
 
 	}
+
+	const onResetClick = () => {
+		setCalcState({
+			...calcState,
+			num: 0,
+			sign: "",
+			calcSum: 0
+		});
+	};
 
 
 
@@ -46,7 +64,11 @@ const App = () => {
 			<CalcWrapper>
 				<TotalScreen 
 					value={calcState.num ? calcState.num : calcState.calcSum} />	
-				<ButtonWrapper addButtonDetail={addButtonDetail}/>
+				<ButtonWrapper 
+					addButtonDetail={addButtonDetail}
+					onNumClick={onNumClick}
+					onResetClick={onResetClick}
+					/>
 				
 			</CalcWrapper>
 			
